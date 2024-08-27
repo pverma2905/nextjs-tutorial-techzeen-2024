@@ -1,0 +1,4 @@
+next.config.mjs => for next js configuration
+jsconfig.json => for js configuration
+layout.js => entry point of file like in react index.js
+page.js => like in react app.js

@@ -1,0 +1,42 @@
+1)what is static generation??
+=>it generate html files for each page during build process in server component
+=>suitable for website with stable content that doesn't change often
+=>fast and efficient delivery of content to users as page are prepared
+
+
+2)what is ssr?? it is slow than staticgeneration
+=>ssr generate html dynamcally on server for each request
+=>server process the request fetch nessary data and generate html on the fly
+=>useful for personalized or frequently changing content
+
+3)can we use all server side component??
+not
+
+4)can we use all client side component??
+yes but same thing we do  in react js so why we switch to next js 
+in next js we use ssr
+
+so we need use a mixed component either client side or server side
+
+5)can we use a component is made of client and server both??
+yes
+
+6)what is dynamic metadata??
+web page ki content ki information provide karte hai to browser
+
+export function generateMetadata(){
+    return{
+        title:'My First Project',
+        description:'This is my first next js 14 project'
+    }
+}
+
+7)script component?
+const ScriptComponent = () => {
+  return (
+    <>
+        <h2>Script Component In Nextjs 14</h2>
+        <Script src='/feature.js' onLoad={()=>{console.log("Feature Executed")}}/>
+    </>
+  )
+}

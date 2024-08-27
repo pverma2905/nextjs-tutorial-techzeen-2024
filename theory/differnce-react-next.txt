@@ -1,0 +1,22 @@
+1)differnce reactjs and next js??
+
+reactjs:-
+=>javascript library 
+=>client side rendering
+=>need to add packages
+
+nextjs:-
+=>react js framework
+=>server side rendering
+=>Many are already added 
+
+
+2)what is nextjs??
+fullstack reactjs framework 
+created by vercel
+more feature than reactjs
+it is server side rendering
+ssr help for seo
+routing css support, middleware etc
+database integration
+

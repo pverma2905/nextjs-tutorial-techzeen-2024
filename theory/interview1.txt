@@ -1,0 +1,70 @@
+1)why state is used not variable??
+when we try to update variable in next js it not rerender so updated value is shown in view 
+but in state value is updated it is rerender 
+
+2)client component and server component??
+client component:- 
+browser 
+which component is render in client component
+ex:- event lister, ui code, setTimeout, setInterval, hooks
+
+server component:- 
+serve karna , where aplication deploy
+which component render in server
+ex:- fetch data, backened code
+
+3)which type of routing in next js??
+file based routing
+
+4)what is file based routing??
+supoose we createa home route so
+first we create home folder under app
+in home we createa page.js
+
+5)differnce b/w navigation and link??
+link => routing performed by a href
+
+navigation => routing performed by event listener
+
+'use client'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
+ const router = useRouter();
+<Link href="/contact/employee">Contact Employee</Link>
+            <br/>
+<button onClick={()=>router.push('/contact/company')}>Contact Company</button>
+
+6)access the route name??
+'use client'
+import { usePathname } from "next/navigation";
+  const currentPathName = usePathname();
+   {
+                currentPathName !== '/contact/company'?<h2>Common Layout For Contact</h2>:null
+            }
+
+
+7)how many type of routing?
+basic routing
+nested routing
+dynamic routing
+404
+
+8)rendering??
+first nextjs code convert into html and sent to the browser
+
+9)environment rendering??
+environment where rendering occur is 
+=>client side
+=>server side
+
+
+10)what is component level client & server side rendering??
+some component is client side rendering and some is server side rendering
+
+11)what is pre-rendering??
+prerendering generate html files in advance during the build process
+static generation and server side rendering
+
+12 middleware??
+
